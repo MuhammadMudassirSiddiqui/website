@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #32ff7e;
+}
+
+.a1 {
+    background: #cd84f1;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 40px;
+    border-radius: 40px;
+    transform: translate(-50%, -50%);
+}
+
+.a3 {
+    color: #18dcff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+.a3 i {
+    font-size: 20px;
+}
+
+.a1:hover .a2 {
+    width: 250px;
+}
+
+.a1:hover .a3 i {
+    color: white;
+}
+
+.a2 {
+    transition: 0.5s;
+    background: none;
+    border: none;
+    outline: none;
+    line-height: 40px;
+    color: white;
+    float: left;
+    width: 0;
+}
+
+
+/*login*/
+
+.a4 {
+    background: black;
+    opacity: .8;
+    color: white;
+}
