@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 0 40px;
+    grid-template-rows: auto;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+}
+
+.container .box {
+    justify-content: center;
+    position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.container .box:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+    transform: skew(2deg, 2deg);
+}
+
+.box .content h2 {
+    position: absolute;
+    font-family: 'Permanent Marker';
+    top: -60px;
+    right: 20px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 10em;
+    color: rgba(225, 225, 255, 0.05);
+    transition: 0.5s;
+}
+
+.box:hover .content h2 {
+    top: -140px;
+}
+
+.box .content h3 {
+    font-family: 'Permanent Marker';
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.box .content p {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Permanent Marker';
+    font-size: 16px;
+}
+
+.box .content a {
+    position: relative;
+    padding: 10px 20px;
+    margin: 20px 0 0;
+    text-decoration: none;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    transition: 0.5s;
+    font-family: 'Permanent Marker';
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover .content a {
+    transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content a:hover {
+    color: black;
+    background: white;
+}
+
+.container .box:nth-child(1)::before {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.container .box:nth-child(2)::before {
+    background: linear-gradient(315deg, #4bcffa, #05c46b);
+}
+
+.container .box:nth-child(3)::before {
+    background: linear-gradient(315deg, #0be881, #0fbcf9);
+}
+
+.container .box:nth-child(4)::before {
+    background: linear-gradient(315deg, #ff9ff3, #00d2d3);
+}
+
+.container .box:hover::before {
+    transition: 0.5s;
+    background: linear-gradient(315deg, #D6A2E8, #FEA47F);
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    margin: 0 auto;
+    color: #4bcffa;
+    font-size: 50px;
+    font-family: "Permanent Marker";
+    text-transform: capitalize;
+    animation: ani 3s linear infinite;
+}
+
+h1 span {
+    animation: ani 3s linear infinite;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 2s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: 2.25s;
+}
+
+h1 span:nth-child(11) {
+    animation-delay: 2.5s;
+}
+
+@keyframes ani {
+    0%,
+    100% {
+        color: #ff0057;
+        filter: blur(0);
+        text-shadow: 0 0 0 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057, 0 0 10 #ff0057;
+    }
+    5%,
+    95% {
+        color: #4bcffa;
+        filter: blur(0);
+        text-overflow: none;
+    }
+}

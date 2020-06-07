@@ -115,7 +115,7 @@ body {
     opacity: 1;
     color: black;
     transition: 0.5s;
-    box-shadow: 5px 5px 15px #32ff7e;
+    box-shadow: 0 0 20px #32ff7e;
 }
 
 
